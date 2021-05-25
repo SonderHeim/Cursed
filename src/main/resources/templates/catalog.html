@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>QuietMelody</title>
+    
+    <style>
+        body {
+            background: #edeef0; 
+        }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/lo.png" width="230" alt="">
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="#">Каталог</a>
+                    <a class="nav__link" href="news.html">Новости</a>
+                    <a class="nav__link" target="_blank" href="https://vk.com/topic-164507736_38126138">Отзывы</a>
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </nav>
+                
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Меню</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    <div class="catalog__intro">
+        <h2 align="center">Каталог кофе</h2>
+    </div>
+    <div class="catalog__orn"> <img src="img/catalog/ornam.png" width = "400px" alt=""></div>
+    
+
+    <div class="catalog">
+        <div class="container">
+            <div class="catalog__inner">
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-1.jpg" width = 100% alt="">
+                    <div class="catalog__name">"КОСТА-РИКА МОРА"</div>
+                    <div class="catalog__description">
+                        <p>Яркий кофе с нотами тёмного рома, вишни в шоколаде и манго.</p>
+                    </div>
+                    <div class="catalog__price">779 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(1)" id="1"></a>
+                </div>
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-4.jpg" width = 100% alt="">
+                    <div class="catalog__name">"БРАЗИЛИЯ СЕРРАДО"</div>
+                    <div class="catalog__description">
+                        <p>Сбалансированный вкус с нотами жареных орехов, шоколада и карамели.</p>
+                    </div>
+                    <div class="catalog__price">299 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(2)" id="2"></a>
+                </div>
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-6.jpg" width = 100% alt="">
+                    <div class="catalog__name">"ГАБРИЕЛЬ НУНЕС"</div>
+                    <div class="catalog__description">
+                        <p>Плотный кофе с нотами миндаля, молочного шоколада и мандарина.</p>
+                    </div>
+                    <div class="catalog__price">419 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(3)" id="3"></a>
+                </div>
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-2.jpg" width = 100% alt="">
+                    <div class="catalog__name">"ПЕРУ НОРАНДИНО"</div>
+                    <div class="catalog__description">
+                        <p>Плотный кофе со вкусом вишни, изюма, ореховой нуги и молочного шоколада.</p>
+                    </div>
+                    <div class="catalog__price">549 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(4)" id="4"></a>
+                </div>
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-3.jpg" width = 100% alt="">
+                    <div class="catalog__name">"КОЛУМБИЯ УИЛА"</div>
+                    <div class="catalog__description">
+                        <p>Ноты красного яблока, темного винограда и какао с яркой фруктовой кислотностью. </p>
+                    </div>
+                    <div class="catalog__price">359 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(5)" id="5"></a>
+                </div>
+                
+                <div class="catalog__item">
+                    <img class="catalog__photo" src="img/catalog/flac-5.jpg" width = 100% alt="">
+                    <div class="catalog__name">"ЭФИОПИЯ ЧЕЛБЕСА"</div>
+                    <div class="catalog__description">
+                        <p>Сладкий кофе со вкусом персика, красного яблока и молочной карамели.</p>
+                    </div>
+                    <div class="catalog__price">719 р. / 250 г.</div>
+                    <input type="button" class="btn  btn--cat" margin-left = "10px" value = "В корзину" onclick="script(6)" id="6"></a>
+                </div>
+                
+            </div>
+            <div class="intro__inner">
+                <a class="btn  btn--cat" margin-left = "10px" onclick="script(7)" id = "7">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="container">
+            
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Контакты</h4>
+                    <address class="footer__address">
+                        <div>г.Москва</div>
+                        <div>Проспект Вернадского, 78</div>
+                    </address>
+                </div>
+                
+                <div class="footer__block">
+                    <h4 class="footer__title">Курсовая работа по предмету</br>"Шаблоны программных платформ языка Джава"</h4>
+                </div>
+                
+                <div class="footer__block">
+                    <h4 class="footer__title">QuietMelody</h4>
+                    <div class="footer__text">
+                        <p>Все началось с увлечения. Мы учились, совершенствовали производство, узнавали о кофе все — до мелочей. Так наше увлечение соединилось с опытом и превратилось в крупную обжарочную компанию!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <div>Made <span>by Lishchenko Gleb</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <div ID = "toTop" > ^ Наверх </div>
+    
+    <script src="app2.js"></script>
+    <script src="goods.js"></script>
+</body>
+</html>
