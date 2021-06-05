@@ -17,4 +17,9 @@ public class MainController {
         model.addAttribute("title", "Главная Страница");
         return "index";
     }
+    @GetMapping("/static.css/home.css")
+    public String MainPage2(Model model) {
+        model.addAttribute("title", "Главная Страница");
+        return "index";
+    }
 }

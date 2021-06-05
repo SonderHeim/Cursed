@@ -39,7 +39,6 @@
   <div th:each="el : ${reviews}" class="alert alert-info mt-2">
     <h3 th:text="${el.name}"/>
     <h3 th:text="${el.text}"/>
-    <a th:href="'/review/' + ${el.id}">Детальнее</a>
   </div>
 </div>
 

@@ -32,4 +32,12 @@ public class Review {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Review() {
+    }
+
+    public Review(String text, String name) {
+        this.text = text;
+        this.name = name;
+    }
 }
